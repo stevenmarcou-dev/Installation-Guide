@@ -359,7 +359,7 @@ const STEPS: StepDef[] = [
     number: 9, shortLabel: "PTO", title: "Permission to Operate", phaseId: "post-install",
     default: {
       timeRange: "1–3 weeks",
-      description: "After passing inspection, we submit your interconnection application to your utility (i.e. LADWP, SDG&E, SCE, APS, or PG&E). Once the utility issues Permission to Operate (PTO), your system can legally turn on and export power to the grid.",
+      description: "After passing inspection, we submit your interconnection application to your utility (i.e. LADWP, SDG&E, SCE, APS, or PG&E). Once the utility issues Permission to Operate (PTO), you can legally turn on your system and export power to the grid.",
       weHandle: [
         "Submit interconnection application immediately after inspection",
         "Follow up with the utility proactively. We don't just wait.",
@@ -384,22 +384,22 @@ const STEPS: StepDef[] = [
     },
   },
   {
-    number: 10, shortLabel: "Activation", title: "System Activated — You're Saving", phaseId: "post-install",
+    number: 10, shortLabel: "Activation", title: "Activate Your System and Start Saving", phaseId: "post-install",
     default: {
       timeRange: "Day PTO arrives · Ongoing",
-      description: "The moment your utility issues PTO, your system goes live. We notify you immediately, activate your monitoring app, and run a remote health check within 48 hours. Your first lower energy bill arrives within 30–60 days, regardless of which financing path you chose.",
+      description: "The moment your utility issues PTO, it's time to turn your system on. Most equipment is already registered and ready to go, but a few systems need a quick activation step on your end. We walk you through exactly what's needed for your equipment and run a remote health check within 48 hours. Your first lower energy bill arrives within 30–60 days, regardless of which financing path you chose.",
       weHandle: [
         "Notify you the moment PTO arrives",
-        "Activate your remote monitoring portal and app access",
+        "Register your equipment in advance whenever possible, so there's nothing extra for you to do",
+        "Walk you through any activation steps specific to your equipment",
         "Remote system health check within 48 hours of activation",
-        "Send your plain-English 'How to read your first solar bill' guide",
       ],
       youHandle: [
-        "Download the monitoring app (Enphase Enlighten or SolarEdge mySolarEdge)",
-        "Watch your production and savings update in real time",
+        "Turn ON your breakers, located near the red sticker in your subpanel",
         "Call SolarTech anytime. We're here for the long term.",
       ],
       faqs: [
+        { q: "What do I need to do to activate my system?", a: "Turn on the breakers located near the red sticker in your subpanel. If you have NeoVolta, Enphase, or QCells equipment, our technician already registered your system, so no further action is needed. If you have a Tesla system, open the Tesla app, sign in, go to Settings, select Powerwall, scroll to Advanced Settings, and set Permission to Export to Yes. From there, set your backup reserve to at least 20% and enter your rate plan. Visit the Tesla website for additional details. Once your breakers are on, allow up to 48 hours for your data to populate on your monitoring platform." },
         { q: "When does my first payment start?", a: "Loan payments begin 30–60 days after activation. Lease and PPA payments begin with your first billing cycle after activation. In all cases, your combined energy cost will be lower than before, starting from your very first statement." },
         { q: "How do I read my new utility bill?", a: "Your bill looks very different. You'll see net metering credits for power sent to the grid. We send a plain-English guide explaining each line item the day your system activates." },
         { q: "What if my system underperforms?", a: "Every installation is backed by a 25-year production guarantee. If output falls short in any year, we service the system at no cost to bring it back to spec.", cta: { label: "Contact Our Service Department", href: "https://solartechonline.com/service-and-maintenance/" } },
