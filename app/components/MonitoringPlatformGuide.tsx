@@ -161,7 +161,7 @@ export default function MonitoringPlatformGuide() {
                 <p className="text-sm mb-4" style={{ color: "#6b7280" }}>
                   SolarTech-installed means SolarTech is the listed contractor with access to your SolarEdge account.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col gap-3">
                   <ChoiceButton active={false} onClick={() => { setSeInstalled("solartech"); setSeStep(3); }}>
                     Yes, SolarTech installed it
                   </ChoiceButton>
@@ -183,7 +183,7 @@ export default function MonitoringPlatformGuide() {
                 <p className="text-sm mb-4" style={{ color: "#6b7280" }}>
                   You&rsquo;ll need Admin access on your own SolarEdge account to retrieve your Site ID and API Key.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col gap-3">
                   <ChoiceButton active={false} onClick={() => { setSeInBusiness(true); setSeStep(3); }}>
                     Yes, still in business
                   </ChoiceButton>

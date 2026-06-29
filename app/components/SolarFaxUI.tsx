@@ -20,6 +20,7 @@ export function ChoiceButton({ active, onClick, children }: { active: boolean; o
         backgroundColor: active ? ORANGE : "#f4f7fb",
         color: active ? "white" : BLUE_DARK,
         border: `2px solid ${active ? ORANGE : "#e5e7eb"}`,
+        minWidth: 0,
       }}
     >
       {children}
