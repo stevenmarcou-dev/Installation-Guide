@@ -157,16 +157,16 @@ export default function MonitoringPlatformGuide() {
 
             {seStep === 1 && (
               <div>
-                <p className="font-bold mb-2" style={{ color: BLUE_DARK }}>Is this a SolarTech-installed system?</p>
+                <p className="font-bold mb-2" style={{ color: BLUE_DARK }}>Did SolarTech install your system?</p>
                 <p className="text-sm mb-4" style={{ color: "#6b7280" }}>
                   SolarTech-installed means SolarTech is the listed contractor with access to your SolarEdge account.
                 </p>
-                <div className="flex flex-col gap-3">
+                <div className="flex gap-3">
                   <ChoiceButton active={false} onClick={() => { setSeInstalled("solartech"); setSeStep(3); }}>
-                    Yes, SolarTech installed it
+                    Yes
                   </ChoiceButton>
                   <ChoiceButton active={false} onClick={() => { setSeInstalled("third-party"); setSeStep(2); }}>
-                    No, a different company installed it
+                    No
                   </ChoiceButton>
                 </div>
               </div>
